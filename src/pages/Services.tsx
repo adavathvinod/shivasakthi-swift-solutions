@@ -29,7 +29,7 @@ const services = [
     title: 'Printing Services',
     description: 'High-quality printing solutions for all your business and personal needs with quick turnaround times.',
     features: ['Business Cards', 'Brochures & Flyers', 'Banners & Posters', 'Letterheads', 'Catalogs', 'Custom Packaging'],
-    image: 'https://images.unsplash.com/photo-1562408590-e32931084e23?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&q=80',
   },
   {
     id: 'passport',
