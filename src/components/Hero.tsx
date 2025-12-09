@@ -19,30 +19,45 @@ const Hero = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-forest-light py-20 md:py-28 lg:py-36">
+    <section className="relative overflow-hidden py-20 md:py-28 lg:py-36">
+      {/* Animated Gradient Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary via-forest-light to-primary bg-[length:400%_400%] animate-gradient" />
+      
+      {/* Mesh Gradient Overlay */}
+      <div className="absolute inset-0">
+        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top_left,_hsla(24,65%,47%,0.15)_0%,_transparent_50%)]" />
+        <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(ellipse_at_bottom_right,_hsla(160,45%,30%,0.2)_0%,_transparent_50%)]" />
+      </div>
+
       {/* Dynamic Light Rays Background */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200%] h-[200%] animate-spin-slow">
-          {[...Array(12)].map((_, i) => (
+          {[...Array(16)].map((_, i) => (
             <div
               key={i}
               className="absolute top-1/2 left-1/2 h-1 origin-left"
               style={{
                 width: '50%',
-                transform: `rotate(${i * 30}deg)`,
-                background: `linear-gradient(90deg, transparent 0%, hsla(24, 65%, 47%, 0.15) 50%, transparent 100%)`,
+                transform: `rotate(${i * 22.5}deg)`,
+                background: `linear-gradient(90deg, transparent 0%, hsla(0, 0%, 100%, 0.08) 30%, hsla(24, 65%, 47%, 0.12) 60%, transparent 100%)`,
               }}
             />
           ))}
         </div>
       </div>
 
+      {/* Animated Orbs */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-terracotta/10 blur-3xl animate-float-orb" />
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full bg-primary-foreground/5 blur-3xl animate-float-orb-reverse" />
+      </div>
+
       {/* Animated Particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(20)].map((_, i) => (
+        {[...Array(25)].map((_, i) => (
           <div
             key={i}
-            className="absolute w-1 h-1 rounded-full bg-terracotta/40 animate-float-particle"
+            className="absolute w-1 h-1 rounded-full bg-primary-foreground/30 animate-float-particle"
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
