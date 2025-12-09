@@ -40,11 +40,11 @@ const services = [
     image: 'https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?w=600&q=80',
   },
   {
-    id: 'medical',
+    id: 'healthcare',
     icon: Stethoscope,
-    title: 'Medical Services',
-    description: 'Healthcare documentation and administrative support for medical certificates and related services.',
-    features: ['Medical Certificates', 'Health Checkup Coordination', 'Insurance Documentation', 'Medical Records', 'Fitness Certificates', 'Lab Report Assistance'],
+    title: 'Healthcare Procedures',
+    description: 'Professional healthcare services by trained personnel for various medical procedures and documentation needs.',
+    features: ['Suture Removal', 'Catheterization', 'Advanced Wound Dressing', 'IV Cannulation', 'Medical Certificates', 'Home Healthcare Visits'],
     image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&q=80',
   },
   {
