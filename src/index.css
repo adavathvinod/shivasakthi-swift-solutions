@@ -110,6 +110,22 @@
     animation: pulse-glow 2s ease-in-out infinite;
   }
 
+  .animate-logo-breathe {
+    animation: logo-breathe 4s ease-in-out infinite;
+  }
+
+  .animate-logo-glow {
+    animation: logo-glow 4s ease-in-out infinite;
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 60s linear infinite;
+  }
+
+  .animate-float-particle {
+    animation: float-particle 5s ease-in-out infinite;
+  }
+
   @keyframes float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-8px); }
@@ -118,5 +134,43 @@
   @keyframes pulse-glow {
     0%, 100% { box-shadow: 0 0 20px hsl(120 60% 45% / 0.4); }
     50% { box-shadow: 0 0 35px hsl(120 60% 45% / 0.6); }
+  }
+
+  @keyframes logo-breathe {
+    0%, 100% { 
+      opacity: 0.15;
+      transform: scale(1);
+    }
+    50% { 
+      opacity: 0.25;
+      transform: scale(1.05);
+    }
+  }
+
+  @keyframes logo-glow {
+    0%, 100% { 
+      opacity: 0.3;
+      transform: scale(0.95);
+    }
+    50% { 
+      opacity: 0.5;
+      transform: scale(1.1);
+    }
+  }
+
+  @keyframes spin-slow {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+
+  @keyframes float-particle {
+    0%, 100% { 
+      opacity: 0.2;
+      transform: translateY(0) scale(1);
+    }
+    50% { 
+      opacity: 0.6;
+      transform: translateY(-20px) scale(1.5);
+    }
   }
 }

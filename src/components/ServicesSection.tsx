@@ -28,9 +28,9 @@ const services = [
   },
   {
     icon: Stethoscope,
-    title: 'Medical Services',
-    description: 'Healthcare documentation, medical certificate assistance, and related administrative support.',
-    link: '/services/medical',
+    title: 'Healthcare Procedures',
+    description: 'Professional healthcare services including suture removal, catheterization, wound dressing, and medical documentation.',
+    link: '/services/healthcare',
   },
   {
     icon: Plane,
